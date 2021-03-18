@@ -52,12 +52,16 @@ html{
 .home{
     font-family: "Poppins",Arial, Helvetica, sans-serif;
     .container_header{
+        background: linear-gradient(to right,#b990df, #d3e2f0);
         display: flex;
         align-items: center;
         justify-content: space-between;
-        width: 90%;
+        width: 100%;
         margin: auto;
-        margin-top: 50px;
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-top: 50px;
+        padding-bottom: 50px;
     }
     ul{
         display: flex;
@@ -91,7 +95,6 @@ html{
         display: flex;
         height: auto;
         justify-content: space-between;
-        margin-top: 50px;
         .novidades{
             width:50%;
             background: linear-gradient(45deg, #adecee, #d3e2f0);
@@ -578,7 +581,11 @@ footer{
 
 
 
-
+@media(max-width:1440px){
+    .home .servicos .container_servicos .card a{
+        font-size: .5rem;
+    }
+}
 
 @media(max-width:1053px){
     .home{
